@@ -1,6 +1,6 @@
 # twitter-bigdata
 working with AWS to implement some use cases for twitter data
-In most of functions the followings should be set as Env Variables in Lambda functions
+In most of functions the followings should be set as Env Variables in Lambda functions:
 `CONSUMER_AUTH_KEY`
 `CONSUMER_AUTH_SECRET`
 `ACCESS_TOKEN`
