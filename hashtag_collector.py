@@ -29,4 +29,4 @@ def lambda_handler(event, context):
                                since="2018-12-31").items():
         csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8')])
     s3.Bucket(datalake_bucket).upload_file("/tmp/aws_hashtag.csv",
-                                            f"twitter-data/#{hashtag}/aws_hashtag.csv")
+                                            f"twitter-data/hashtags/{hashtag}/aws_hashtag.csv")
