@@ -40,3 +40,4 @@ def lambda_handler(event, context):
     now_dir = now.strftime("%Y-%m-%d")
     s3.Bucket(datalake_bucket).upload_file("/tmp/hashtag.csv",
                                             f"twitter-data/hashtags/{hashtag}/{now_dir}/hashtag.csv")
+
